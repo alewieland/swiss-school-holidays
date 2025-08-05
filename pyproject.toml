@@ -1,0 +1,33 @@
+[project]
+name = "swiss-school-holidays"
+version = "0.1.0"
+description = "Get swiss special days and school holidays from switzerland per ZIP Code"
+authors = [{name = "Alexander Wieland", email = "mail@alexanderwieland.ch"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "holidays>=0.77",
+    "pandas>=2.3.1",
+]
+
+[build-system]
+requires = ["setuptools>=80.0"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "lab>=8.4",
+    "openpyxl>=3.1.5",
+    "pdfplumber>=0.11.7",
+    "pypdf2>=3.0.1",
+    "ruff>=0.12.5",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-select = ["I"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

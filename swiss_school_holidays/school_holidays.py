@@ -5,7 +5,7 @@ from pathlib import Path
 from .utils import load_json_gz, overlap_period
 
 # Default data paths (relative to package)
-DATA_DIR = Path(__file__).parent.parent / "data"
+DATA_DIR = Path(__file__).parent / "data"
 ZIP_TO_GROUP_PATH = DATA_DIR / "zip_to_group.json.gz"
 SCHOOL_HOLIDAYS_PATH = DATA_DIR / "school_holidays.json.gz"
 
